@@ -1,3 +1,26 @@
+# 垂直扩展实验
+指定参数`--cpus=0.5,1,2`
+
+| CPUS | 并发数 | 平均延迟 |
+| ---- | ------ | -------- |
+| 0.5  | 200    | 4828     |
+| 1    | 200    | 2617     |
+| 2    | 200    | 954      |
+
+# 水平扩展实验
+
+固定参数`--cpus=1`开启3个容器
+| 容器数 | 并发数 | 平均延迟 |
+| ------ | ------ | -------- |
+| 1      | 200    | 3019     |
+| 2      | 200    | 1505     |
+| 3      | 200    | 1236     |
+
+# Redis实验
+
+![](img/single.png)
+![](img/image-cluster.png)
+
 # WebPOS
 
 The demo shows a web POS system , which replaces the in-memory product db in aw03 with a one backed by 京东.
